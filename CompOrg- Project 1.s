@@ -76,7 +76,13 @@ main:	#Code starts off here
 	syscall		#space is printed to seperate the names
 
 	addi $a0, $a0, 48 #Letter P is calculated here
-	syscall 	#Letter P is printed 
+	syscall 	#Letter P is printed
+
+	addi $a0, $a0, 21 #Letter e is calculated here
+	syscall 	#Letter e is printed
+
+	addi $a0, $a0, 15 #Letter t is calculated here
+	syscall 	#Letter t is printed here
 
 
 
