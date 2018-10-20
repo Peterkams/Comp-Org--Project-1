@@ -17,6 +17,12 @@ main:	#Code starts off here
 	addi $a0, $a0, 2 #2 is calculated
 	syscall		#2 is printed
 
+	addi $a0, $a0, 6 #8 is calculated
+  	syscall		#8 is printed
+
+	addi $a0, $a0, -4 #4 is calculated
+	syscall		#4 is printed
+
 
 
 	jr $ra 		#return statement
