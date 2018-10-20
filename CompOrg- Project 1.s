@@ -60,6 +60,12 @@ main:	#Code starts off here
 	addi $a0, $a0, -18 #Letter e is calculated here
 	syscall 	#Letter e is printed
 
+	addi $a0, $a0, -2 #Letter c is calculated here
+	syscall		#Letter c is printed
+	
+	addi $a0, $a0, 5 #Letter h is calculated here
+	syscall		#Letter h is printed 
+
 
 
 	jr $ra 		#return statement
