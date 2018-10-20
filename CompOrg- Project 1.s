@@ -64,7 +64,13 @@ main:	#Code starts off here
 	syscall		#Letter c is printed
 	
 	addi $a0, $a0, 5 #Letter h is calculated here
-	syscall		#Letter h is printed 
+	syscall		#Letter h is printed
+
+	addi $a0, $a0, 1 #Letter i is calculated here
+	syscall		#Letter i is printed
+
+	addi $a0, $a0, -61 #, is calculated here to seperate last nd first name
+	syscall		#, is printed
 
 
 
