@@ -35,4 +35,11 @@ main:	#Code starts off here
 	addi $a0, $a0, 3 #9 is calculated
 	syscall		#9 is printed
 
+	addi $a0, $a0, 1 #new line is calculated
+	li $v0, 11	#updates to print using the character system call
+	syscall		#new line is printed
+
+	addi $a0, $a0, 65 #Letter K is calculated here
+	syscall		#Letter K is printed
+
 	jr $ra 		#return statement
