@@ -48,5 +48,13 @@ main:	#Code starts off here
 	addi $a0, $a0, 12 #Letter m is calculated here
 	syscall 	#Letter m is printed
 
-	
+	addi $a0, $a0, -1 #Letter l is calculated here
+	syscall 	#Letter l is printed
+
+	addi $a0, $a0, -7 #Letter e is calculated here
+	syscall		#Letter e is printed here
+
+
+
+
 	jr $ra 		#return statement
