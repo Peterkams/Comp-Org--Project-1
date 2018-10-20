@@ -23,6 +23,11 @@ main:	#Code starts off here
 	addi $a0, $a0, -4 #4 is calculated
 	syscall		#4 is printed
 
+	addi $a0, $a0, -4 #0 is calculated
+	syscall		#0 is printed
+
+	addi $a0, $a0, 6 #6 is calculated
+	syscall		#6 is printed
 
 
 	jr $ra 		#return statement
