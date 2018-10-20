@@ -42,4 +42,11 @@ main:	#Code starts off here
 	addi $a0, $a0, 65 #Letter K is calculated here
 	syscall		#Letter K is printed
 
+	addi $a0, $a0, 22 #Letter a is calculated here
+	syscall		#Letter a is printed
+
+	addi $a0, $a0, 12 #Letter m is calculated here
+	syscall 	#Letter m is printed
+
+	
 	jr $ra 		#return statement
