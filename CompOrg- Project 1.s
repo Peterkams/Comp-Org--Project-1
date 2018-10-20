@@ -54,6 +54,11 @@ main:	#Code starts off here
 	addi $a0, $a0, -7 #Letter e is calculated here
 	syscall		#Letter e is printed here
 
+	addi $a0, $a0, 18 #Letter w is calculater here
+	syscall 	#Letter w is printed
+
+	addi $a0, $a0, -18 #Letter e is calculated here
+	syscall 	#Letter e is printed
 
 
 
