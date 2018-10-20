@@ -84,6 +84,12 @@ main:	#Code starts off here
 	addi $a0, $a0, 15 #Letter t is calculated here
 	syscall 	#Letter t is printed here
 
+	addi $a0, $a0, -15 #Letter e is calculated here
+	syscall 	#Letter e is printed
+
+	addi $a0, $a0, 13 #Letter r is calculated here
+	syscall		#Letter r is printed 
+
 
 
 	jr $ra 		#return statement
