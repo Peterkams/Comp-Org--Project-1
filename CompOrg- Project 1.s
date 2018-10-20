@@ -72,6 +72,12 @@ main:	#Code starts off here
 	addi $a0, $a0, -61 #, is calculated here to seperate last nd first name
 	syscall		#, is printed
 
+	addi $a0, $a0, -12 #space is calculated here
+	syscall		#space is printed to seperate the names
+
+	addi $a0, $a0, 48 #Letter P is calculated here
+	syscall 	#Letter P is printed 
+
 
 
 	jr $ra 		#return statement
