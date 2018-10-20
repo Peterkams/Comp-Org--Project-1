@@ -29,5 +29,10 @@ main:	#Code starts off here
 	addi $a0, $a0, 6 #6 is calculated
 	syscall		#6 is printed
 
+	addi $a0, $a0, 0 #6 is calculated
+	syscall		#6 is printed
+
+	addi $a0, $a0, 3 #9 is calculated
+	syscall		#9 is printed
 
 	jr $ra 		#return statement
