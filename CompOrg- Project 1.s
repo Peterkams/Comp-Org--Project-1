@@ -1,7 +1,7 @@
 .data	# Data declaration section
 at_output:	.word 64 #@ address is passed here
 
-.text			#Aseembly language instruction
+.text			#Assembly language instruction
 .globl main
 
 main:	#Code starts off here
@@ -9,7 +9,6 @@ main:	#Code starts off here
 	li $v0, 11
 	syscall		#prints @ 
 
-	
 	li $v0, 1	#updates to print using the integer system call
 	addi $a0, $a0, -64 
 	syscall		#0 is printed
@@ -28,7 +27,7 @@ main:	#Code starts off here
 
 	addi $a0, $a0, 6 #6 is calculated
 	syscall		#6 is printed
-
+	
 	addi $a0, $a0, 0 #6 is calculated
 	syscall		#6 is printed
 
@@ -41,13 +40,13 @@ main:	#Code starts off here
 
 	addi $a0, $a0, 65 #Letter K is calculated here
 	syscall		#Letter K is printed
-
+	
 	addi $a0, $a0, 22 #Letter a is calculated here
 	syscall		#Letter a is printed
 
 	addi $a0, $a0, 12 #Letter m is calculated here
 	syscall 	#Letter m is printed
-
+	
 	addi $a0, $a0, -1 #Letter l is calculated here
 	syscall 	#Letter l is printed
 
@@ -64,7 +63,7 @@ main:	#Code starts off here
 	syscall		#Letter c is printed
 	
 	addi $a0, $a0, 5 #Letter h is calculated here
-	syscall		#Letter h is printed
+	syscall		#Letter h is printed 
 
 	addi $a0, $a0, 1 #Letter i is calculated here
 	syscall		#Letter i is printed
@@ -76,7 +75,7 @@ main:	#Code starts off here
 	syscall		#space is printed to seperate the names
 
 	addi $a0, $a0, 48 #Letter P is calculated here
-	syscall 	#Letter P is printed
+	syscall 	#Letter P is printed 
 
 	addi $a0, $a0, 21 #Letter e is calculated here
 	syscall 	#Letter e is printed
@@ -89,7 +88,6 @@ main:	#Code starts off here
 
 	addi $a0, $a0, 13 #Letter r is calculated here
 	syscall		#Letter r is printed 
-
 
 
 	jr $ra 		#return statement
